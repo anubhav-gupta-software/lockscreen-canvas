@@ -1,0 +1,737 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		05A56A827AB5CA411926DB20 /* InviteCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A622831B8AB765D1D1070F52 /* InviteCode.swift */; };
+		0CE4A6AF4441D13F966D39AA /* SharedStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59522CFD49850F9E5AD7D1C /* SharedStore.swift */; };
+		11F98FB5B8B6F10939F1BC73 /* SharedStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59522CFD49850F9E5AD7D1C /* SharedStore.swift */; };
+		1BFD33CABB13B405B3A6491E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70DC7C0FCBF9D3435D1E5D77 /* Assets.xcassets */; };
+		24935F3624E14528F0A2892C /* CanvasJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3F82E1994FB14E78CFF362 /* CanvasJSON.swift */; };
+		2B9D935C55D8A867CB14D71B /* CanvasRenderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105716FFA9C3D1C5B8F3956A /* CanvasRenderView.swift */; };
+		30185995F7B26C7DD029DD74 /* CanvasDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E820266CE8003EB1D0345E1 /* CanvasDocument.swift */; };
+		35AC489E4F07B67B4BD109CA /* LockscreenCanvasApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1517F57573D2FBD96F2EFD /* LockscreenCanvasApp.swift */; };
+		4EE39BE57B534F3E470AFFAF /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F1E3F057D911D5A61F51BF5 /* SwiftUI.framework */; };
+		655F2ECDB8DDA998D874F20D /* CanvasRenderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105716FFA9C3D1C5B8F3956A /* CanvasRenderView.swift */; };
+		6A6BA5A65F9BD1A13B3798AA /* RESTTransport.swift in Sources */ = {isa = PBXBuildFile; fileRef = F720E9562CB18F7F2C9E03F8 /* RESTTransport.swift */; };
+		6BFD96FE6B79F1DEDA7ADF83 /* AppGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23D4FB72EF46FBE268D0BCB /* AppGroup.swift */; };
+		6C72C80891B5A02D6B45E873 /* DrawingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A7777AC3242E7F1B96FB7D /* DrawingModel.swift */; };
+		730B195B3D93332AA8F5190B /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DB6C735124116E95E531C3 /* SettingsView.swift */; };
+		7D7C026982257B021F570263 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798C3CF16B848BD2DB3F22B1 /* WelcomeView.swift */; };
+		83415C1714EF1F23F51E0809 /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7740F778515F95ECBEEC3BDD /* AppModel.swift */; };
+		8E60BC46BBFC6080C17A1C5F /* SampleCanvas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B2BFC2CDB1E0D350979308 /* SampleCanvas.swift */; };
+		94429FC1387FD7ABF529CFBB /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 498B06708895E5DE825C6321 /* PrivacyInfo.xcprivacy */; };
+		99128D5B529B5F04C1939EE0 /* DrawingCanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1876389CE4A06222B931C32D /* DrawingCanvasView.swift */; };
+		A2C097A898E3E69F6DFE058D /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 498B06708895E5DE825C6321 /* PrivacyInfo.xcprivacy */; };
+		A4615294F7B29371583A6CA6 /* WidgetViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097C950A87C622A73F5A4FFC /* WidgetViews.swift */; };
+		A7C8B806193FFBAB62B4D2C2 /* LockscreenCanvasWidget.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 4C93AE89D664DB7D0042C966 /* LockscreenCanvasWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		AA1685AC93CC1BEA82B50CCD /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB77FC02252DE11571FB756C /* WidgetKit.framework */; };
+		AEF57C9ADD316013F1B04F35 /* CanvasJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3F82E1994FB14E78CFF362 /* CanvasJSON.swift */; };
+		AFFE45C5C7F04EEA153AF9B7 /* CanvasDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E820266CE8003EB1D0345E1 /* CanvasDocument.swift */; };
+		B221E00EA42FE00D24886B4F /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17747D2C29EE0BF2DC6F8CCF /* HomeView.swift */; };
+		B2D99C70FAC212A4F26D70C7 /* WidgetGuideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B64A636131ACB3CAAC77C20 /* WidgetGuideView.swift */; };
+		B4ADBA9FE064A54AB19C5A1F /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F1E3F057D911D5A61F51BF5 /* SwiftUI.framework */; };
+		C35C151F018521B9E67FF324 /* SyncConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3012F27C14AA9CBA4D8667 /* SyncConfig.swift */; };
+		C5A9D566338BDFC2F447D4FE /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB77FC02252DE11571FB756C /* WidgetKit.framework */; };
+		C945E3135AB8875F06EEA2BB /* RESTTransport.swift in Sources */ = {isa = PBXBuildFile; fileRef = F720E9562CB18F7F2C9E03F8 /* RESTTransport.swift */; };
+		CE34E4029383DA7EA8619050 /* InviteCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A622831B8AB765D1D1070F52 /* InviteCode.swift */; };
+		CF2DC28D6A0AF5B33FEBC9E2 /* AppGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23D4FB72EF46FBE268D0BCB /* AppGroup.swift */; };
+		D2D236E08EE276A95D23AE57 /* SampleCanvas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B2BFC2CDB1E0D350979308 /* SampleCanvas.swift */; };
+		D586AD41A2154FF0E1CC7044 /* PageCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6DA8F59B08CDB8E4D665F4D /* PageCard.swift */; };
+		D6401AA1DF312E7AD794D973 /* DrawingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A7777AC3242E7F1B96FB7D /* DrawingModel.swift */; };
+		D6D95F1D6B13C01A8F126E30 /* EditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD61DE77E6637A137D754DA /* EditorView.swift */; };
+		DDE1C16F7D3B450ABC5910BF /* SyncConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3012F27C14AA9CBA4D8667 /* SyncConfig.swift */; };
+		E18D55C055D0D040EEB84703 /* LockscreenCanvasWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = B97E0907FDBF63BD26E2EF9E /* LockscreenCanvasWidget.swift */; };
+		F155A0EFC036B7B29B2C06FB /* WidgetReloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2ED04998D6329A66AC81825 /* WidgetReloader.swift */; };
+		F9AE1540260E70DF442786FD /* Ink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF972B9BCD3725E733C0AF8 /* Ink.swift */; };
+		FAB219C18F13130939B88545 /* Ink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF972B9BCD3725E733C0AF8 /* Ink.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6963C4F5F581103265D986F2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1EFE6B4B5FB6D80BBB97EED4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3F4202D9002408E599842231;
+			remoteInfo = LockscreenCanvasWidget;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FF54ECC5D913DDBFBEC579C3 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A7C8B806193FFBAB62B4D2C2 /* LockscreenCanvasWidget.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		00DB6C735124116E95E531C3 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		097C950A87C622A73F5A4FFC /* WidgetViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetViews.swift; sourceTree = "<group>"; };
+		0F1E3F057D911D5A61F51BF5 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		105716FFA9C3D1C5B8F3956A /* CanvasRenderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasRenderView.swift; sourceTree = "<group>"; };
+		17747D2C29EE0BF2DC6F8CCF /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		1876389CE4A06222B931C32D /* DrawingCanvasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingCanvasView.swift; sourceTree = "<group>"; };
+		2B3012F27C14AA9CBA4D8667 /* SyncConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncConfig.swift; sourceTree = "<group>"; };
+		3B64A636131ACB3CAAC77C20 /* WidgetGuideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetGuideView.swift; sourceTree = "<group>"; };
+		498B06708895E5DE825C6321 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		4C93AE89D664DB7D0042C966 /* LockscreenCanvasWidget.appex */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "wrapper.app-extension"; path = LockscreenCanvasWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E820266CE8003EB1D0345E1 /* CanvasDocument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasDocument.swift; sourceTree = "<group>"; };
+		70DC7C0FCBF9D3435D1E5D77 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		75B2BFC2CDB1E0D350979308 /* SampleCanvas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleCanvas.swift; sourceTree = "<group>"; };
+		7740F778515F95ECBEEC3BDD /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
+		798C3CF16B848BD2DB3F22B1 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		7FCF13C9470F463819D8CA72 /* LockscreenCanvas.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LockscreenCanvas.entitlements; sourceTree = "<group>"; };
+		9CF972B9BCD3725E733C0AF8 /* Ink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ink.swift; sourceTree = "<group>"; };
+		9F3F82E1994FB14E78CFF362 /* CanvasJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasJSON.swift; sourceTree = "<group>"; };
+		A622831B8AB765D1D1070F52 /* InviteCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InviteCode.swift; sourceTree = "<group>"; };
+		B2A9D609F28CFFC4CD3B1674 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		B97E0907FDBF63BD26E2EF9E /* LockscreenCanvasWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockscreenCanvasWidget.swift; sourceTree = "<group>"; };
+		C1287501481787E1A639A87E /* LockscreenCanvas.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = LockscreenCanvas.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2ED04998D6329A66AC81825 /* WidgetReloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetReloader.swift; sourceTree = "<group>"; };
+		C59522CFD49850F9E5AD7D1C /* SharedStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedStore.swift; sourceTree = "<group>"; };
+		CBD61DE77E6637A137D754DA /* EditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorView.swift; sourceTree = "<group>"; };
+		CF1517F57573D2FBD96F2EFD /* LockscreenCanvasApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockscreenCanvasApp.swift; sourceTree = "<group>"; };
+		DAAE1E38626394D66FE5122E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		DB77FC02252DE11571FB756C /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		DC81B402F082C8A34A264DE6 /* LockscreenCanvasWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LockscreenCanvasWidget.entitlements; sourceTree = "<group>"; };
+		E6DA8F59B08CDB8E4D665F4D /* PageCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageCard.swift; sourceTree = "<group>"; };
+		F0A7777AC3242E7F1B96FB7D /* DrawingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingModel.swift; sourceTree = "<group>"; };
+		F23D4FB72EF46FBE268D0BCB /* AppGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppGroup.swift; sourceTree = "<group>"; };
+		F720E9562CB18F7F2C9E03F8 /* RESTTransport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RESTTransport.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1559C95137A2A60CB658E2EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA1685AC93CC1BEA82B50CCD /* WidgetKit.framework in Frameworks */,
+				4EE39BE57B534F3E470AFFAF /* SwiftUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		866A96A4824C218989A584A4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5A9D566338BDFC2F447D4FE /* WidgetKit.framework in Frameworks */,
+				B4ADBA9FE064A54AB19C5A1F /* SwiftUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1337FC3F207312AD1F95F884 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C1287501481787E1A639A87E /* LockscreenCanvas.app */,
+				4C93AE89D664DB7D0042C966 /* LockscreenCanvasWidget.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		69FE875D7E1C7B519B84A742 /* LockscreenCanvas */ = {
+			isa = PBXGroup;
+			children = (
+				7740F778515F95ECBEEC3BDD /* AppModel.swift */,
+				70DC7C0FCBF9D3435D1E5D77 /* Assets.xcassets */,
+				1876389CE4A06222B931C32D /* DrawingCanvasView.swift */,
+				CBD61DE77E6637A137D754DA /* EditorView.swift */,
+				17747D2C29EE0BF2DC6F8CCF /* HomeView.swift */,
+				DAAE1E38626394D66FE5122E /* Info.plist */,
+				7FCF13C9470F463819D8CA72 /* LockscreenCanvas.entitlements */,
+				CF1517F57573D2FBD96F2EFD /* LockscreenCanvasApp.swift */,
+				E6DA8F59B08CDB8E4D665F4D /* PageCard.swift */,
+				00DB6C735124116E95E531C3 /* SettingsView.swift */,
+				798C3CF16B848BD2DB3F22B1 /* WelcomeView.swift */,
+				3B64A636131ACB3CAAC77C20 /* WidgetGuideView.swift */,
+				C2ED04998D6329A66AC81825 /* WidgetReloader.swift */,
+			);
+			path = LockscreenCanvas;
+			sourceTree = "<group>";
+		};
+		B9146BD49342AB7B40CDFB95 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				F23D4FB72EF46FBE268D0BCB /* AppGroup.swift */,
+				5E820266CE8003EB1D0345E1 /* CanvasDocument.swift */,
+				9F3F82E1994FB14E78CFF362 /* CanvasJSON.swift */,
+				105716FFA9C3D1C5B8F3956A /* CanvasRenderView.swift */,
+				F0A7777AC3242E7F1B96FB7D /* DrawingModel.swift */,
+				9CF972B9BCD3725E733C0AF8 /* Ink.swift */,
+				A622831B8AB765D1D1070F52 /* InviteCode.swift */,
+				498B06708895E5DE825C6321 /* PrivacyInfo.xcprivacy */,
+				F720E9562CB18F7F2C9E03F8 /* RESTTransport.swift */,
+				75B2BFC2CDB1E0D350979308 /* SampleCanvas.swift */,
+				C59522CFD49850F9E5AD7D1C /* SharedStore.swift */,
+				2B3012F27C14AA9CBA4D8667 /* SyncConfig.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		E3E91652643D7FDCA651D3E9 /* LockscreenCanvasWidget */ = {
+			isa = PBXGroup;
+			children = (
+				B2A9D609F28CFFC4CD3B1674 /* Info.plist */,
+				DC81B402F082C8A34A264DE6 /* LockscreenCanvasWidget.entitlements */,
+				B97E0907FDBF63BD26E2EF9E /* LockscreenCanvasWidget.swift */,
+				097C950A87C622A73F5A4FFC /* WidgetViews.swift */,
+			);
+			path = LockscreenCanvasWidget;
+			sourceTree = "<group>";
+		};
+		E8A0C477DF6EF9A8B9D9E360 = {
+			isa = PBXGroup;
+			children = (
+				69FE875D7E1C7B519B84A742 /* LockscreenCanvas */,
+				E3E91652643D7FDCA651D3E9 /* LockscreenCanvasWidget */,
+				B9146BD49342AB7B40CDFB95 /* Shared */,
+				F45F90C5FD44427664A6FD3E /* Frameworks */,
+				1337FC3F207312AD1F95F884 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F45F90C5FD44427664A6FD3E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0F1E3F057D911D5A61F51BF5 /* SwiftUI.framework */,
+				DB77FC02252DE11571FB756C /* WidgetKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3F4202D9002408E599842231 /* LockscreenCanvasWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BBF69842EA3CD523DF5AB575 /* Build configuration list for PBXNativeTarget "LockscreenCanvasWidget" */;
+			buildPhases = (
+				F44C4620349355752BFD1AA7 /* Sources */,
+				E3D3E3593FD39EA49C16DCFE /* Resources */,
+				1559C95137A2A60CB658E2EB /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LockscreenCanvasWidget;
+			packageProductDependencies = (
+			);
+			productName = LockscreenCanvasWidget;
+			productReference = 4C93AE89D664DB7D0042C966 /* LockscreenCanvasWidget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		75606494CABB60C7205EB3BD /* LockscreenCanvas */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 73B2FB81A78AC866BDC90F95 /* Build configuration list for PBXNativeTarget "LockscreenCanvas" */;
+			buildPhases = (
+				4C506BDA314A1674C5C71962 /* Sources */,
+				33046DED88BA7D3BE91D8E91 /* Resources */,
+				866A96A4824C218989A584A4 /* Frameworks */,
+				FF54ECC5D913DDBFBEC579C3 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6FB1A59C874EFE87EF938E9F /* PBXTargetDependency */,
+			);
+			name = LockscreenCanvas;
+			packageProductDependencies = (
+			);
+			productName = LockscreenCanvas;
+			productReference = C1287501481787E1A639A87E /* LockscreenCanvas.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1EFE6B4B5FB6D80BBB97EED4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					3F4202D9002408E599842231 = {
+						ProvisioningStyle = Automatic;
+					};
+					75606494CABB60C7205EB3BD = {
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 4A746C1C55B8F1B84248CAC5 /* Build configuration list for PBXProject "LockscreenCanvas" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = E8A0C477DF6EF9A8B9D9E360;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 1337FC3F207312AD1F95F884 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				75606494CABB60C7205EB3BD /* LockscreenCanvas */,
+				3F4202D9002408E599842231 /* LockscreenCanvasWidget */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		33046DED88BA7D3BE91D8E91 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BFD33CABB13B405B3A6491E /* Assets.xcassets in Resources */,
+				94429FC1387FD7ABF529CFBB /* PrivacyInfo.xcprivacy in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3D3E3593FD39EA49C16DCFE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2C097A898E3E69F6DFE058D /* PrivacyInfo.xcprivacy in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4C506BDA314A1674C5C71962 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF2DC28D6A0AF5B33FEBC9E2 /* AppGroup.swift in Sources */,
+				83415C1714EF1F23F51E0809 /* AppModel.swift in Sources */,
+				AFFE45C5C7F04EEA153AF9B7 /* CanvasDocument.swift in Sources */,
+				24935F3624E14528F0A2892C /* CanvasJSON.swift in Sources */,
+				655F2ECDB8DDA998D874F20D /* CanvasRenderView.swift in Sources */,
+				99128D5B529B5F04C1939EE0 /* DrawingCanvasView.swift in Sources */,
+				D6401AA1DF312E7AD794D973 /* DrawingModel.swift in Sources */,
+				D6D95F1D6B13C01A8F126E30 /* EditorView.swift in Sources */,
+				B221E00EA42FE00D24886B4F /* HomeView.swift in Sources */,
+				FAB219C18F13130939B88545 /* Ink.swift in Sources */,
+				CE34E4029383DA7EA8619050 /* InviteCode.swift in Sources */,
+				35AC489E4F07B67B4BD109CA /* LockscreenCanvasApp.swift in Sources */,
+				D586AD41A2154FF0E1CC7044 /* PageCard.swift in Sources */,
+				C945E3135AB8875F06EEA2BB /* RESTTransport.swift in Sources */,
+				D2D236E08EE276A95D23AE57 /* SampleCanvas.swift in Sources */,
+				730B195B3D93332AA8F5190B /* SettingsView.swift in Sources */,
+				11F98FB5B8B6F10939F1BC73 /* SharedStore.swift in Sources */,
+				DDE1C16F7D3B450ABC5910BF /* SyncConfig.swift in Sources */,
+				7D7C026982257B021F570263 /* WelcomeView.swift in Sources */,
+				B2D99C70FAC212A4F26D70C7 /* WidgetGuideView.swift in Sources */,
+				F155A0EFC036B7B29B2C06FB /* WidgetReloader.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F44C4620349355752BFD1AA7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6BFD96FE6B79F1DEDA7ADF83 /* AppGroup.swift in Sources */,
+				30185995F7B26C7DD029DD74 /* CanvasDocument.swift in Sources */,
+				AEF57C9ADD316013F1B04F35 /* CanvasJSON.swift in Sources */,
+				2B9D935C55D8A867CB14D71B /* CanvasRenderView.swift in Sources */,
+				6C72C80891B5A02D6B45E873 /* DrawingModel.swift in Sources */,
+				F9AE1540260E70DF442786FD /* Ink.swift in Sources */,
+				05A56A827AB5CA411926DB20 /* InviteCode.swift in Sources */,
+				E18D55C055D0D040EEB84703 /* LockscreenCanvasWidget.swift in Sources */,
+				6A6BA5A65F9BD1A13B3798AA /* RESTTransport.swift in Sources */,
+				8E60BC46BBFC6080C17A1C5F /* SampleCanvas.swift in Sources */,
+				0CE4A6AF4441D13F966D39AA /* SharedStore.swift in Sources */,
+				C35C151F018521B9E67FF324 /* SyncConfig.swift in Sources */,
+				A4615294F7B29371583A6CA6 /* WidgetViews.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6FB1A59C874EFE87EF938E9F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3F4202D9002408E599842231 /* LockscreenCanvasWidget */;
+			targetProxy = 6963C4F5F581103265D986F2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0C5B2CBA5A308B9633DC0CEF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_STRICT_CONCURRENCY = minimal;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		2E0C79B661AA96B11C06977A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_ENTITLEMENTS = LockscreenCanvasWidget/LockscreenCanvasWidget.entitlements;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = LockscreenCanvasWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.anubhavgupta.lockscreen-canvas.widget";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		5695F7114C31F472F009FAAF /* Personal */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_STRICT_CONCURRENCY = minimal;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Personal;
+		};
+		6BBD1F2560235BA871F27E94 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = LockscreenCanvas/LockscreenCanvas.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = LockscreenCanvas/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.anubhavgupta.lockscreen-canvas";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		6E0D072B0168DE7D8675D976 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = LockscreenCanvas/LockscreenCanvas.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = LockscreenCanvas/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.anubhavgupta.lockscreen-canvas";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		7BEAB9D43630B88EE1AF824B /* Personal */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_ENTITLEMENTS = Config/Empty.entitlements;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = LockscreenCanvasWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.anubhavgupta.lockscreen-canvas.widget";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Personal;
+		};
+		A900C214ADFA7FEAE27C0C1A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_STRICT_CONCURRENCY = minimal;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		BB9AEA2F89BCEEC7CE1AD68C /* Personal */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Config/Empty.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = LockscreenCanvas/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.anubhavgupta.lockscreen-canvas";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Personal;
+		};
+		BC2A3812B8A8244DC04E8AC6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_ENTITLEMENTS = LockscreenCanvasWidget/LockscreenCanvasWidget.entitlements;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = LockscreenCanvasWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.anubhavgupta.lockscreen-canvas.widget";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4A746C1C55B8F1B84248CAC5 /* Build configuration list for PBXProject "LockscreenCanvas" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A900C214ADFA7FEAE27C0C1A /* Debug */,
+				5695F7114C31F472F009FAAF /* Personal */,
+				0C5B2CBA5A308B9633DC0CEF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		73B2FB81A78AC866BDC90F95 /* Build configuration list for PBXNativeTarget "LockscreenCanvas" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6BBD1F2560235BA871F27E94 /* Debug */,
+				BB9AEA2F89BCEEC7CE1AD68C /* Personal */,
+				6E0D072B0168DE7D8675D976 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		BBF69842EA3CD523DF5AB575 /* Build configuration list for PBXNativeTarget "LockscreenCanvasWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC2A3812B8A8244DC04E8AC6 /* Debug */,
+				7BEAB9D43630B88EE1AF824B /* Personal */,
+				2E0C79B661AA96B11C06977A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1EFE6B4B5FB6D80BBB97EED4 /* Project object */;
+}
