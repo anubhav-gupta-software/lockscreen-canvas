@@ -50,7 +50,7 @@ final class AppModel: ObservableObject {
 
     var shareMessage: String {
         let code = InviteCode.formatted(session?.code ?? document.code)
-        return "Draw with me on Lockscreen Canvas. Code: \(code)"
+        return "Draw with me on Doodl. Code: \(code)"
     }
 
     func updateDisplayName(_ name: String) {
@@ -105,7 +105,7 @@ final class AppModel: ObservableObject {
             return
         }
         guard let transport = makeTransport() else {
-            lastError = "Add a database URL in Settings to join a canvas on another phone."
+            lastError = "Add a database URL in Settings to join a Doodl on another phone."
             return
         }
         guard !isBusy else { return }

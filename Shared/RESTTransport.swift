@@ -18,15 +18,15 @@ enum SyncError: LocalizedError, Equatable {
     var errorDescription: String? {
         switch self {
         case .notFound:
-            return "No canvas is using that code."
+            return "No Doodl is using that code."
         case .refused:
-            return "The database refused the update. Check that canvases can be read and written."
+            return "The database refused the update. Check that drawings can be read and written."
         case .badResponse:
             return "The database sent back something I couldn't read."
         case .unreachable:
             return "Couldn't reach the database. Your drawing is still saved on this iPhone."
         case .conflict:
-            return "The canvas changed while it was saving."
+            return "The drawing changed while it was saving."
         }
     }
 }

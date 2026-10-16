@@ -88,7 +88,7 @@ struct SharedCanvasWidget: Widget {
         StaticConfiguration(kind: "com.anubhavgupta.lockscreen-canvas", provider: CanvasProvider()) { entry in
             CanvasWidgetView(entry: entry)
         }
-        .configurationDisplayName("Shared Canvas")
+        .configurationDisplayName("Doodl")
         .description("The drawing you share, on the Home Screen and the Lock Screen.")
         .supportedFamilies([
             .systemSmall,

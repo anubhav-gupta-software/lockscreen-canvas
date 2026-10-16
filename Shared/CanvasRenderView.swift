@@ -34,9 +34,9 @@ struct CanvasRenderView: View {
 
     private var accessibilityDescription: String {
         if document.visibleStrokes.isEmpty && document.visibleTexts.isEmpty {
-            return "Empty canvas"
+            return "Empty Doodl"
         }
-        return "Canvas with \(document.visibleStrokes.count) marks"
+        return "Doodl with \(document.visibleStrokes.count) marks"
     }
 
     private func ink(_ hex: String) -> Color {

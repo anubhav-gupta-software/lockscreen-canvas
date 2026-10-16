@@ -15,12 +15,12 @@ struct WidgetGuideView: View {
                     stepGroup(title: "Lock Screen") {
                         step(1, "Touch and hold the Lock Screen, then tap Customize.")
                         step(2, "Tap the widget area under the clock, or a circular complication.")
-                        step(3, "Search for Lockscreen Canvas and add Shared Canvas.")
+                        step(3, "Search for Doodl and add it.")
                     }
 
                     stepGroup(title: "Home Screen") {
                         step(1, "Touch and hold the Home Screen until the icons jiggle.")
-                        step(2, "Tap the + button, then search for Lockscreen Canvas.")
+                        step(2, "Tap the + button, then search for Doodl.")
                         step(3, "Choose small, medium, or large.")
                     }
 
@@ -30,9 +30,9 @@ struct WidgetGuideView: View {
                             .foregroundStyle(Theme.secondary)
                     } else {
                         VStack(alignment: .leading, spacing: 8) {
-                            Text("The widget is on this iPhone, but it can’t read the canvas yet.")
+                            Text("The widget is on this iPhone, but it can’t read the drawing yet.")
                                 .font(.subheadline.weight(.medium))
-                            Text("Sharing needs an App Group, which Apple only allows with a paid Developer Program membership. Run the “LockscreenCanvas Shared” scheme after you enroll. Until then, both of you still see the canvas inside the app.")
+                            Text("Sharing needs an App Group, which Apple only allows with a paid Developer Program membership. Run the “LockscreenCanvas Shared” scheme after you enroll. Until then, both of you still see the drawing inside the app.")
                                 .font(.footnote)
                                 .foregroundStyle(Theme.secondary)
                         }

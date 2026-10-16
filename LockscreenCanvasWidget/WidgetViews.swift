@@ -70,14 +70,14 @@ struct CanvasWidgetView: View {
     }
 
     private var inlineTitle: String {
-        if !entry.sharingAvailable { return "Canvas" }
+        if !entry.sharingAvailable { return "Doodl" }
         if let text = entry.document?.visibleTexts.last?.text, !text.isEmpty {
             if text.count > 28 {
                 return String(text.prefix(28)) + "…"
             }
             return text
         }
-        return hasDrawing ? "Shared canvas" : "Canvas"
+        return "Doodl"
     }
 
     private var circular: some View {
@@ -104,7 +104,7 @@ struct CanvasWidgetView: View {
                 .padding(12)
                 .frame(maxWidth: .infinity, maxHeight: .infinity)
             VStack(alignment: .leading, spacing: 6) {
-                Text("Shared canvas")
+                Text("Doodl")
                     .font(.system(.headline, design: .serif))
                     .foregroundStyle(Theme.ink)
                 Text(caption)

@@ -22,7 +22,7 @@ struct SettingsView: View {
                 } header: {
                     Text("Database")
                 } footer: {
-                    Text("Leave this empty to keep the canvas on this iPhone. Paste the root of a Firebase Realtime Database to sync with another phone. Setup is in the README, and you don’t need an API key.")
+                    Text("Leave this empty to keep the drawing on this iPhone. Paste the root of a Firebase Realtime Database to sync with another phone. Setup is in the README, and you don’t need an API key.")
                 }
                 if let error {
                     Section {
@@ -32,7 +32,7 @@ struct SettingsView: View {
                 }
                 Section("On this iPhone") {
                     LabeledContent("Sync", value: model.isRemoteSync ? "Between phones" : "This iPhone")
-                    LabeledContent("Lock Screen", value: AppGroup.isAvailable ? "Sharing the canvas" : "Needs a paid account")
+                    LabeledContent("Lock Screen", value: AppGroup.isAvailable ? "Sharing" : "Needs a paid account")
                 }
             }
             .scrollContentBackground(.hidden)

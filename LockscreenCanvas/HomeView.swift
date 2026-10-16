@@ -79,7 +79,7 @@ struct HomeView: View {
             SettingsView()
         }
         .confirmationDialog(
-            "Leave this canvas?",
+            "Leave this Doodl?",
             isPresented: $confirmLeave,
             titleVisibility: .visible
         ) {
@@ -93,7 +93,7 @@ struct HomeView: View {
     private var header: some View {
         HStack(alignment: .top, spacing: 12) {
             VStack(alignment: .leading, spacing: 4) {
-                Text("Your canvas")
+                Text("Your Doodl")
                     .font(.subheadline.weight(.medium))
                     .foregroundStyle(Theme.secondary)
                 Text(InviteCode.formatted(model.session?.code ?? ""))
@@ -119,7 +119,7 @@ struct HomeView: View {
                 Menu {
                     Button("Settings", systemImage: "gearshape") { showSettings = true }
                     Button("How to add the widget", systemImage: "lock.iphone") { showGuide = true }
-                    Button("Leave this canvas", systemImage: "rectangle.portrait.and.arrow.right", role: .destructive) {
+                    Button("Leave this Doodl", systemImage: "rectangle.portrait.and.arrow.right", role: .destructive) {
                         confirmLeave = true
                     }
                 } label: {
@@ -138,7 +138,7 @@ struct HomeView: View {
             Text("The widget is installed, but it can’t see this drawing yet.")
                 .font(.subheadline.weight(.medium))
                 .foregroundStyle(Theme.ink)
-            Text("iOS only shares a canvas with the Lock Screen through an App Group, and that needs a paid Apple Developer account. The README explains how to turn it on. Two phones can still sync in the app once a database URL is set.")
+            Text("iOS only shares a Doodl with the Lock Screen through an App Group, and that needs a paid Apple Developer account. The README explains how to turn it on. Two phones can still sync in the app once a database URL is set.")
                 .font(.footnote)
                 .foregroundStyle(Theme.secondary)
         }

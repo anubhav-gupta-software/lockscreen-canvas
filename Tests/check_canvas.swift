@@ -166,9 +166,14 @@ enum CheckCanvas {
 
     static func checkSample() {
         let sample = SampleCanvas.preview()
-        expect(sample.visibleStrokes.first?.points.count ?? 0 > 30, "heart has points")
-        let inside = sample.visibleStrokes[0].points.allSatisfy { $0.x >= 0 && $0.x <= 1 && $0.y >= 0 && $0.y <= 1 }
-        expect(inside, "heart stays on the page")
+        expect(sample.visibleStrokes.count > 4, "preview has the doodle")
+        expect(sample.visibleStrokes.contains { $0.colorHex == "C6452C" }, "preview heart is vermilion")
+        expect(sample.visibleStrokes.contains { $0.points.count > 30 }, "preview stroke has points")
+        let inside = sample.visibleStrokes.allSatisfy { stroke in
+            stroke.points.allSatisfy { $0.x >= 0 && $0.x <= 1 && $0.y >= 0 && $0.y <= 1 }
+        }
+        expect(inside, "preview stays on the page")
+        expect(sample.visibleTexts.isEmpty, "preview is drawn, not typed")
         let copy = sample.displayCopy(strokeLimit: 1, pointLimit: 12)
         expect(copy.visibleStrokes.first?.points.count ?? 99 <= 12, "widget copy decimates")
     }

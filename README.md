@@ -1,12 +1,14 @@
-# Lockscreen Canvas
+# Doodl
 
-A shared page for two people. You pair with an invite code, draw or write on the canvas, and the same drawing shows up in the app on the other phone and, once sharing is turned on, on their Lock Screen and Home Screen.
+A shared page for two people. You pair with an invite code, draw or write, and the same drawing shows up in the app on the other phone and, once sharing is turned on, on their Lock Screen and Home Screen.
+
+The name on the iPhone is Doodl. The Xcode project, schemes, and bundle ids still use the LockscreenCanvas names so an existing install keeps working.
 
 ## What you can do
 
-- Start a canvas and get a 6-character code, or join someone else's.
+- Start a Doodl and get a 6-character code, or join someone else's.
 - Draw with a pen, an eraser, and a few brush sizes and colors. Undo, redo, and clear are there, and you can drop text on the page.
-- Keep the canvas on one iPhone with no account and no keys. That is the default.
+- Keep the drawing on one iPhone with no account and no keys. That is the default.
 - Sync between two phones by pasting a Firebase Realtime Database URL. There is no Firebase SDK and no API key. The URL is the whole setup.
 - Add a WidgetKit widget: Home Screen small, medium, and large, plus Lock Screen circular, rectangular, and inline.
 
@@ -42,9 +44,9 @@ Do not add the App Groups capability from the Signing tab while you are on a fre
 
 ### Add the widget
 
-Touch and hold the Lock Screen, tap Customize, tap the area under the clock or a circular complication, and add **Shared Canvas** from Lockscreen Canvas. The same widget is in the Home Screen widget gallery in small, medium, and large.
+Touch and hold the Lock Screen, tap Customize, tap the area under the clock or a circular complication, and add **Doodl**. The same widget is in the Home Screen widget gallery in small, medium, and large.
 
-On a free Apple ID the widget installs, but it cannot read the drawing. iOS only lets the app and the widget share files through an App Group, and Apple sells that capability with the paid program. The app will say so on the canvas screen. Drawing, invite codes, and phone-to-phone sync in the app all work without it.
+On a free Apple ID the widget installs, but it cannot read the drawing. iOS only lets the app and the widget share files through an App Group, and Apple sells that capability with the paid program. The app will say so on the home screen. Drawing, invite codes, and phone-to-phone sync in the app all work without it.
 
 ## Sync between two phones
 
@@ -59,7 +61,7 @@ While that placeholder is still there, and Settings has no database URL, nothing
 To sync:
 
 1. Create a free Firebase project and add a Realtime Database. The console gives you a URL like `https://your-project-default-rtdb.firebaseio.com` or a `firebasedatabase.app` host. Either one works.
-2. Open the Rules tab and, for a private demo between friends, allow read and write on the canvas path. The invite code is the only secret, so treat the database like a shared notebook, not a vault:
+2. Open the Rules tab and, for a private demo between friends, allow read and write. The invite code is the only secret, so treat the database like a shared notebook, not a vault. The stored path is `/canvases/{code}`, which is an internal name and not the one on the phone:
 
 ```json
 {
@@ -75,7 +77,7 @@ To sync:
 ```
 
 3. On both phones, open Settings in the app and paste the database root. You can instead replace the placeholder string in `SyncConfig.swift` and rebuild, which also lets the widget refresh from the network once the App Group is on.
-4. One person taps Start a canvas and shares the code. The other taps Join with a code.
+4. One person taps Start a Doodl and shares the code. The other taps Join with a code.
 
 Drawings merge by stroke and text. If you both draw at the same time, both marks stay. Undo removes your mark without wiping theirs. The app polls every few seconds while it is open and pushes shortly after each stroke.
 
@@ -92,7 +94,7 @@ This is the paid-account step.
 
 Debug and Release sign `LockscreenCanvas/LockscreenCanvas.entitlements` and the widget’s matching file. Personal, which is what the default scheme runs and archives, signs `Config/Empty.entitlements` so a free team never sees the capability.
 
-After this, strokes are written to the shared container and the widget reloads. The widget also fetches the Firebase canvas on its own timeline (about every 15 minutes) if a database URL is set, so the Lock Screen can catch up while the app is closed.
+After this, strokes are written to the shared container and the widget reloads. The widget also fetches the shared drawing on its own timeline (about every 15 minutes) if a database URL is set, so the Lock Screen can catch up while the app is closed.
 
 ## TestFlight later
 
@@ -147,7 +149,7 @@ swiftc -o /tmp/check-canvas \
 - **Signing requires a development team.** Pick your Personal Team on both the app and the widget.
 - **Personal development teams do not support the App Groups capability.** You are building the Shared scheme, or App Groups got toggled on in Signing & Capabilities. Switch back to the LockscreenCanvas scheme.
 - **The widget installs but stays blank or says sharing is off.** Expected on a free team. The section above turns it on.
-- **Join says you need a database URL.** Local mode cannot see a canvas that was created on another phone. Add the Firebase URL on both phones, or start the canvas on this one.
+- **Join says you need a database URL.** Local mode cannot see a Doodl that was started on another phone. Add the Firebase URL on both phones, or start one on this phone.
 - **The database refused the update.** The Realtime Database rules are still locked. Use the rules above, and paste the database root, not a `?auth=` URL.
 - **The app will not open after a week.** Run it from Xcode again to refresh the free profile.
 - **Bundle id is not available.** Change both bundle ids together, widget last component `.widget`.

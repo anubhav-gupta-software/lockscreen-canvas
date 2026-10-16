@@ -23,7 +23,7 @@ struct WelcomeView: View {
                 }
 
                 VStack(alignment: .leading, spacing: 10) {
-                    Text("Lockscreen\nCanvas")
+                    Text("Doodl")
                         .font(.system(size: 46, weight: .medium, design: .serif))
                         .foregroundStyle(Theme.ink)
                     Text("A page for two. What you draw shows up on their Lock Screen.")
@@ -46,7 +46,7 @@ struct WelcomeView: View {
                     .onSubmit(start)
 
                 Button(action: start) {
-                    Text("Start a canvas")
+                    Text("Start a Doodl")
                         .font(.system(.body, design: .serif).weight(.semibold))
                         .frame(maxWidth: .infinity)
                         .padding(.vertical, 16)
@@ -111,7 +111,7 @@ struct JoinSheet: View {
     var body: some View {
         NavigationStack {
             VStack(alignment: .leading, spacing: 16) {
-                Text("Ask them for the code on their canvas.")
+                Text("Ask them for the code on their Doodl.")
                     .font(.system(.body, design: .serif))
                     .foregroundStyle(Theme.secondary)
                     .fixedSize(horizontal: false, vertical: true)

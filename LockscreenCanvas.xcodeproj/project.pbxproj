@@ -444,6 +444,8 @@
 				CODE_SIGN_ENTITLEMENTS = LockscreenCanvasWidget/LockscreenCanvasWidget.entitlements;
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = LockscreenCanvasWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Doodl;
+				INFOPLIST_KEY_CFBundleName = Doodl;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -538,6 +540,8 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = LockscreenCanvas/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Doodl;
+				INFOPLIST_KEY_CFBundleName = Doodl;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -558,6 +562,8 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = LockscreenCanvas/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Doodl;
+				INFOPLIST_KEY_CFBundleName = Doodl;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -575,6 +581,8 @@
 				CODE_SIGN_ENTITLEMENTS = Config/Empty.entitlements;
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = LockscreenCanvasWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Doodl;
+				INFOPLIST_KEY_CFBundleName = Doodl;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -669,6 +677,8 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = LockscreenCanvas/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Doodl;
+				INFOPLIST_KEY_CFBundleName = Doodl;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -686,6 +696,8 @@
 				CODE_SIGN_ENTITLEMENTS = LockscreenCanvasWidget/LockscreenCanvasWidget.entitlements;
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = LockscreenCanvasWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Doodl;
+				INFOPLIST_KEY_CFBundleName = Doodl;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

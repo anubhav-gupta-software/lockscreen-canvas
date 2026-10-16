@@ -49,6 +49,8 @@ targets:
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.anubhavgupta.lockscreen-canvas
+        INFOPLIST_KEY_CFBundleDisplayName: Doodl
+        INFOPLIST_KEY_CFBundleName: Doodl
         INFOPLIST_FILE: LockscreenCanvas/Info.plist
         GENERATE_INFOPLIST_FILE: NO
         CODE_SIGN_ENTITLEMENTS: LockscreenCanvas/LockscreenCanvas.entitlements
@@ -74,6 +76,8 @@ targets:
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.anubhavgupta.lockscreen-canvas.widget
+        INFOPLIST_KEY_CFBundleDisplayName: Doodl
+        INFOPLIST_KEY_CFBundleName: Doodl
         INFOPLIST_FILE: LockscreenCanvasWidget/Info.plist
         GENERATE_INFOPLIST_FILE: NO
         CODE_SIGN_ENTITLEMENTS: LockscreenCanvasWidget/LockscreenCanvasWidget.entitlements
